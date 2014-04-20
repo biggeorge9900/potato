@@ -5,6 +5,10 @@ Java 7 runtime
 Eclipse Kepler
 Python 2.7
 
+>>> Create a directory for development and add environment variable DEVEL_PATH to .profile set it to the develoment directory
+
+>>> Clone this project (potato) and potato_env to your development directory
+
 >>> Install lxml
 sudo apt-get install libxml2-dev libxslt1-dev python-dev
 sudo apt-get install python-lxml
@@ -26,7 +30,11 @@ Windows -> Preferences -> PyDev -> Interpreters -> Python Interpreter -> Quick A
 Rename it to "potato_env" (double click on the name to rename)
 
 Add String Substitution Variables:
+Variable: DEVEL_PATH
+Value   : <path-to-your-development-directory>
+
+Add String Substitution Variables:
 Variable: GOOGLE_APP_ENGINE
-Value   : <path-to-your-google_appengine_sdk>
+Value   : "${DEVEL_PATH}/potato_env/local/google_appengine"
 
 >>> Import project
