@@ -15,3 +15,4 @@ libraries:
 handlers:
 - url: /api/.*
   script: api.application
+  secure: always
