@@ -14,4 +14,5 @@ class authentication(webapp2.RequestHandler):
 class finish_authentication(webapp2.RequestHandler):
 
     def post(self):
-        req = self.request
+        # req = self.request
+        pass

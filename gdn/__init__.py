@@ -1,8 +1,8 @@
 import os
 import sys
 import webapp2
-from api.routes import routes
-from api.configs import configs
+from .routes import routes
+from .configs import configs
 
 '''
 def include_3rdpart_libs():

@@ -14,5 +14,5 @@ libraries:
 
 handlers:
 - url: /api/.*
-  script: api.application
+  script: gdn.application
   secure: always
