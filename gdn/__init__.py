@@ -1,5 +1,4 @@
-import os
-import sys
+
 import webapp2
 from .routes import routes
 from .configs import configs
@@ -12,4 +11,6 @@ def include_3rdpart_libs():
 include_3rdpart_libs()
 '''
 
-application = webapp2.WSGIApplication(routes=routes, debug=True, config=configs)
+application = webapp2.WSGIApplication(routes=routes,
+                                      debug=configs.get('debug', False),
+                                      config=configs)

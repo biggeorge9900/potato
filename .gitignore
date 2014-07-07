@@ -1,4 +1,4 @@
 *.pyc
 gdn/configs.py
-gdn/configs.py.bak
+gdn/.configs.py.bak
 *~
